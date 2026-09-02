@@ -2,33 +2,24 @@
 
 ![Hy4 Preview field-test banner](assets/hy4-preview-banner.png)
 
-This page collects material from a Hy4 Preview game-development experiment: a
-deckbuilding roguelike task card, a Blender rifle-inspection case, and the
-visuals used to present them. It is arranged in the order the work happened,
-so the prompts can be reused and the results can be reviewed.
-
-## Stack and implementation
-
-The workflow used WorkBuddy and Tencent Hy4 preview. The game-side work is
-represented by the public [DCC-MCP Godot adapter](https://github.com/dcc-mcp/dcc-mcp-godot),
-while the rifle case follows the public [DCC-MCP Blender adapter](https://github.com/dcc-mcp/dcc-mcp-blender).
-The official context page is [Tencent Hunyuan Hy4 Preview](https://hunyuan.tencent.com/research/hy4-preview).
+This preview follows one development exercise from a deckbuilding roguelike
+brief to a Blender rifle-inspection case. The first prompt lays out the game,
+its data-driven architecture, and its test plan. The second turns a procedural
+rifle into a short material-and-animation study.
 
 ## Effect image
 
 ![Blender rifle inspection case](assets/09-blender-case.png)
 
-The case creates a procedural rifle in Blender, uses Image Gen for a PBR
-material skin, then completes material replacement, turntable keyframes, and
-animation export.
+The rifle skin is generated with Image Gen for a PBR-oriented material pass.
+The image keeps the Blender viewport, shader nodes, and render result together.
 
 ## Godot demo
 
 ![dcc-cua observing and debugging the running Godot game](assets/godot-agent-observation.png)
 
-The capture shows `dcc-cua` observing and debugging the running Godot game
-interface while the Echospire menu is visible. See the [DCC-MCP Godot adapter](https://github.com/dcc-mcp/dcc-mcp-godot)
-for the public integration context.
+This capture records `dcc-cua` observing and debugging the running Godot game
+interface. The public integration context is the [DCC-MCP Godot adapter](https://github.com/dcc-mcp/dcc-mcp-godot).
 
 ## Prompts
 
@@ -54,3 +45,10 @@ for the public integration context.
   <source src="https://media.githubusercontent.com/media/loonghao/Hy4-preview/feat/hy4-echospire-banner-materials/media/card-roguelike-gameplay.mp4" type="video/mp4">
   [Download the card roguelike gameplay](media/card-roguelike-gameplay.mp4)
 </video>
+
+## Stack
+
+WorkBuddy and Tencent Hy4 preview form the authoring workflow. The public
+[DCC-MCP Godot adapter](https://github.com/dcc-mcp/dcc-mcp-godot) covers the
+game side; the public [DCC-MCP Blender adapter](https://github.com/dcc-mcp/dcc-mcp-blender)
+covers the rifle case. Official context: [Tencent Hunyuan Hy4 Preview](https://hunyuan.tencent.com/research/hy4-preview).
